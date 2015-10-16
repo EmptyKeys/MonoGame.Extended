@@ -31,8 +31,7 @@ namespace MonoGame.Extended.InputListeners
         public T AddListener<T>()
             where T : InputListener
         {
-            var constructors = typeof(T)
-                .GetConstructors(BindingFlags.Instance | BindingFlags.NonPublic | BindingFlags.Public)
+            var constructors = typeof(T).GetTypeInfo().DeclaredConstructors                
                 .Where(c => !c.GetParameters().Any())
                 .ToArray();
 

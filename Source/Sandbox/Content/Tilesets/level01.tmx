@@ -23,7 +23,7 @@
   </tile>
  </tileset>
  <imagelayer name="Image Layer 1" visible="0">
-  <image source="../Backgrounds/hills.png"/>
+  <image source="Backgrounds/hills.png"/>
  </imagelayer>
  <layer name="Tile Layer 2" width="20" height="10">
   <data>

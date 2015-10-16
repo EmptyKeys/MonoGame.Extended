@@ -66,7 +66,7 @@ namespace MonoGame.Extended.Content.Pipeline.Tiled
                 {
                     writer.Write("ImageLayer");
                     // ReSharper disable once AssignNullToNotNullAttribute
-                    writer.Write(Path.GetFileNameWithoutExtension(imageLayer.Image.Source));
+                    writer.Write(Path.Combine(Path.GetDirectoryName(imageLayer.Image.Source), Path.GetFileNameWithoutExtension(imageLayer.Image.Source)));
                     writer.Write(new Vector2(imageLayer.X, imageLayer.Y));
                 }
 
